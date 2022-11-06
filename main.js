@@ -35,7 +35,7 @@ function contarTiempo(){
 function bloqueartarjetas(){
     for (let i = 0; i <= 15 ; i++) {
         let tarjetaBloqueada = document.getElementById(i);
-        tarjetaBloqueada.innerHTML = numeros[i];
+        tarjetaBloqueada.innerHTML = `<img src="imagenes/${numeros[i]}.png">`;
         tarjetaBloqueada.disable = true;
     }
 }
@@ -54,7 +54,7 @@ function destapar(id){
         // mostrar el primer numero
         tarjeta1 = document.getElementById(id);
         primerResultado = numeros[id];
-        tarjeta1.innerHTML = primerResultado;
+        tarjeta1.innerHTML = `<img src="imagenes/${primerResultado}.png">`;
 
         // desabilitar el sabilitar el primer boton
         tarjeta1.disable = true;
@@ -63,7 +63,7 @@ function destapar(id){
         // mostrar el segundo numero
         tarjeta2 = document.getElementById(id);
         segundoResultado = numeros[id];
-        tarjeta2.innerHTML = segundoResultado;
+        tarjeta2.innerHTML = `<img src="imagenes/${segundoResultado}.png">`;
         // desabilitar el sabilitar el segundo boton
         tarjeta2.disable = true;
         // incrementar moviminetos 
